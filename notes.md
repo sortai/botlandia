@@ -1,6 +1,7 @@
 * bot class
    * name
-   * levels
-       * interaction frequency
+   * stats
+       * interaction period
+       * new interaction probability
        * directives
-   * affinities?
+   * affinities
