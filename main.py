@@ -14,7 +14,7 @@ class bot:
         if affinites is None: affinities = dict()
         self.timealive = 0;
     def interact(self, olist):
-        return 0
+        pass
 
 
 if __name__ == '__main__':
@@ -30,8 +30,8 @@ if __name__ == '__main__':
         for event in pygame.event.get():
             if event.type == pygame.QUIT or ( pygame.key.get_pressed()[pygame.K_q] != 0 ):
                 done = True
-            if ( pygame.key.get_pressed()[pygame.K_w] != 0 ):
-                capture=True
+##            if ( pygame.key.get_pressed()[pygame.K_w] != 0 ):
+##                capture=True
         # Set the screen background
         screen.fill((0,0,0))
      
