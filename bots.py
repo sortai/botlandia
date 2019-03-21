@@ -11,3 +11,4 @@ class bot:
         self.name = name
         if stats is None: stats = dict(defstats)
         if affinites is None: affinities = dict()
+        self.timealive = 0;
