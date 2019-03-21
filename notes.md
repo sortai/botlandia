@@ -1,7 +1,7 @@
 * bot class
    * name
    * stats
-       * interaction period
-       * new interaction probability
-       * directives
+       * interaction period (inp)
+       * new interaction probability (nip)
+       * directives (dir)
    * affinities
