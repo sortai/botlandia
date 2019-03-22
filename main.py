@@ -1,6 +1,6 @@
 #!/bin/python3
 import pygame
-#from bots import bot
+from bots import bot
 
 
 def init():
