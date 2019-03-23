@@ -1,4 +1,7 @@
 
 
-class bots:
-    pass
+class bot:
+    def __init__(self):
+        pass
+
+
