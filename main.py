@@ -14,17 +14,20 @@ def init():
 
 def finish():
     pygame.quit()
-    #quit()
+    quit()
 
 def main_menu():
+    global size, w, h, screen
     done = False
     clock = pygame.time.Clock()
     while not done:
         for event in pygame.event.get():
             if event.type == pygame.QUIT or ( pygame.key.get_pressed()[pygame.K_q] != 0 ):
                 finish()
-#            if ( pygame.key.get_pressed()[pygame.K_w] != 0 ):
-#                capture=True
+            if ( pygame.key.get_pressed()[pygame.K_b] != 0 ):
+                screen = pygame.display.set_mode(size)
+            if ( pygame.key.get_pressed()[pygame.K_f] != 0 ):
+                screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         # background
         screen.fill((0,0,0))
         # draw
