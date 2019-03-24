@@ -4,8 +4,8 @@ from bots import bot
 
 
 def init():
-    pygame.init()
     global size, w, h, screen
+    pygame.init()
     size = [512, 512]
     w=size[0]
     h=size[1]
@@ -29,8 +29,9 @@ def main_menu():
             if ( pygame.key.get_pressed()[pygame.K_f] != 0 ):
                 screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         # background
-        screen.fill((0,0,0))
+        screen.fill((8,8,8))
         # draw
+        pygame.draw.line(screen, (255,255,255), (128,128), (256,256))
         
         pygame.display.flip()
         clock.tick(20)
